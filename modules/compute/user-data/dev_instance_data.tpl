@@ -17,8 +17,8 @@ sudo yum install -y httpd httpd-tools mod_ssl
 
 
 # Start httpd/php with system
-sudo systemctl enable httpd
-sudo systemctl start httpd
+# sudo systemctl enable httpd
+# sudo systemctl start httpd
 
 # Install php
 # sudo yum install amazon-linux-extras -y
