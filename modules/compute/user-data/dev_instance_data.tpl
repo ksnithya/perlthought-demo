@@ -26,5 +26,11 @@ sudo amazon-linux-extras enable php7.4
 sudo yum clean metadata
 sudo yum install php php-common php-pear -y
 sudo yum install php-{cgi,curl,mbstring,gd,mysqlnd,gettext,json,xml,fpm,intl,zip} -y
-echo End: update and install packages
 
+# Install nginx
+amazon-linux-extras enable nginx1
+sudo yum install -y nginx
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+echo End: update and install packages
