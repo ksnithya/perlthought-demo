@@ -29,11 +29,5 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 systemctl enable docker
 service docker start
 
-# Install nginx
-amazon-linux-extras enable nginx1
-sudo yum install -y nginx
-sudo systemctl enable nginx
-sudo systemctl start nginx
-
 echo End: update and install packages
 
