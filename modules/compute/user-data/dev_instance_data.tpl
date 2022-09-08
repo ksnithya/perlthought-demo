@@ -21,11 +21,11 @@ sudo systemctl enable httpd
 sudo systemctl start httpd
 
 # Install php
-sudo yum install amazon-linux-extras -y
-sudo amazon-linux-extras enable php7.4
-sudo yum clean metadata
-sudo yum install php php-common php-pear -y
-sudo yum install php-{cgi,curl,mbstring,gd,mysqlnd,gettext,json,xml,fpm,intl,zip} -y
+# sudo yum install amazon-linux-extras -y
+# sudo amazon-linux-extras enable php7.4
+# sudo yum clean metadata
+# sudo yum install php php-common php-pear -y
+# sudo yum install php-{cgi,curl,mbstring,gd,mysqlnd,gettext,json,xml,fpm,intl,zip} -y
 
 # Install nginx
 amazon-linux-extras enable nginx1
